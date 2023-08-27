@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Craven Fashion</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous"
+      />
+        <link rel="stylesheet" href="./static/style.css">
+        <link rel="stylesheet" href="./static/contact.css">
+        <script src="https://use.fontawesome.com/7ade57373d.js"></script>
+        <link rel="icon" href="./img/logoTitle.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/60fedd8558.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+        <!-- SCROLL TOP BUTTON -->
+        <a class="scrollToTop" href="#"></a>
+        <!-- END SCROLL TOP BUTTON -->
+       
+  <section id="contactus">
+      <p id="contact-head">Order</p>
+      <p id="contact-message">You Can Order Cloth of your choice from us and get it at your Home Delivery.</p>
+      <div class="container">
+        <div id="form-footer" class="row">
+          <div style="width: 97%!important;" class="col-md-8">
+            <div class="center-div">
+              <div class="contact-table">
+                <form   action="https://formspree.io/f/xgejkdgk"
+                  method="POST" enctype="multipart/form-data" id="my-form">
+                  <div class="input-container" >
+                    <label class="contact-inputs" for="validationCustom01">Name :</label>
+                    <input type="text" class="form-control contact-inputs-tags" required id="validationCustom01" placeholder="Enter your name" name="name" onchange="validateFormInput()">
+                  </div>
+                  <div class="input-container">
+                    <label class="contact-inputs" for="validationCustom02">E-mail ID  :</label>
+                    <input type="email" class="form-control contact-input-tags" required id="validationCustom02" placeholder="Enter your email address" name="email" onchange="validateFormInput()">                  
+                  </div>
+                  <div class="input-container">
+                    <label class="contact-inputs" for="validationCustom03">Mobile No  :</label>
+                    <input type="number" class="form-control contact-input-tags" required id="validationCustom03" placeholder="Enter your Moblie No" name="Moblie No" onchange="validateFormInput()">                    
+                  </div>
+                  
+                  <div class="input-container">
+                    <label class="contact-inputs" for="validationCustom10">Address  :</label>
+                    <textarea type="text" class="form-control contact-input-tags" required id="validationCustom03"  rows="4" name="Address"></textarea>
+                  </div>
+                  <div class="input-container">
+                    <label class="contact-inputs" for="validationCustom05">Select Size:</label><br>
+                    <input type="radio"   name="Select Size" value="M" checked >M
+                    <input type="radio"  name="Select Size" value="L" >L
+                    <input type="radio"  name="Select Size" value="XM" >XL
+                    <input type="radio"  name="Select Size" value="XXL" >XXL
+                  </div>
+                  <div class="input-container">
+                    <label class="contact-inputs" for="validationCustom04">QUANTITY No  :</label>
+                    <input type="number" class="form-control contact-input-tags" required id="validationCustom04" placeholder="Enter QUANTITY No" name="QUANTITY No" onchange="validateFormInput()">                   
+                  </div>
+                 
+                  <div class="input-container">
+                    <label class="contact-inputs" for="validationCustom07">Select Cloth Code:</label><br>
+                    <select name="Cloth Code">
+                      <option >TS101</option>
+                      <option >TS102 </option>
+                      <option >TS103 </option>
+                      <option > CS201 </option>
+                      <option > CS202 </option>
+                      <option > CS203 </option>
+                      <option >  SH301 </option>
+                      <option >  SH302 </option>
+                      <option > CT401 </option>
+                      <option >CT402 </option>
+                      <option > CT403 </option>
+                      <option >JK501  </option>
+                      <option > JK502 </option>
+                      <option > SS601 </option>
+                      <option > SS602 </option>
+                                                         
+                    </select>
+                  </div>
+                  <div class="input-container">
+                    <label class="contact-inputs" for="validationCustom07">Payment Method:</label><br>
+                    <select name="Cloth Code">
+                      <option >CASH</option>
+                      <option >ONline </option>
+                    
+                                                         
+                    </select>
+                  </div>
+                                
+                  <div>
+                    <button id="submit-btn" class="btn btn-md btn-outline-primary" type="submit">SUBMIT</button>
+                  </div>
+                </form>
+              </div>             
+            </div>
+            <div style="margin-top: 20px;" id="status"></div>
+          </div>         
+        </div>
+      </div>      
+</section>
+
+
+
+
+    <!-- scroll to top button -->
+   
+  <script src="static/script.js"></script>
+     <script src="static/form.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
+
